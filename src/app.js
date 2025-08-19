@@ -7,4 +7,8 @@ app.get("/", (req, res) => {
 	res.status(200).send("Hello Mohit!");
 });
 
+app.post("/", (req, res) => {
+	res.status(200).send(`Hola, ${req.query.name}`);
+});
+
 module.exports = app;
