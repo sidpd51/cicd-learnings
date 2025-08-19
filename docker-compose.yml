@@ -7,5 +7,5 @@ services:
     ports:
       - "3051:3001"   # 👈 host:container → map 3051 on your machine to 3000 inside container
     environment:
-      - PORT=3001     # 👈 tell your app to listen on 3000 inside container
+      - PORT=3001     # 👈 tell your app to listen on 3001 inside container
     restart: unless-stopped
